@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@275;405;465&display=swap');
+
+:root{
+  --primary-color: #031d44;
+  --secondary-color: #f7c009;
+  --text-color1: #ff5c00;
+}
+
+* {
+  color: var(--text-color1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 465;
+}
+
+body{
+  background-color: var(--primary-color);
+  font-family: "Outfit", sans-serif;
+}
+
+.td-all, .title, .dt-list, .td-item{
+  display: flex;
+}
+.td-all{
+  display: flex;
+  height:100%;
+  width:80vh;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 10px;
+  padding: 10px;
+  padding-top: 20px;
+}
+.td-title{
+  display: flex;
+  background-color:var(--primary-color);
+  width:100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color:var(--text-color1);
+  font-weight: 465;
+  font-family: 'Outfit', sans-serif;;    
+  border-radius: 5px;
+
+}
+
+p{
+  font-weight: 405;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.td-list{
+  width:100%;
+  flex-direction: column;
+  gap:10px;
+  color:#0049b5;
+}
+.td-item{
+  width:100%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 3px solid var(--text-color1);
+  background-color: rgb(255, 180, 130);
+  border-radius: 5px;
+  color:#0049b5;
+  
+}
+.td-item > div {
+  width: 80%;
+  color:#0049b5;
+  align-items: center;
+}
+.td-item:hover {
+  cursor: pointer;
+  transition: all .5s ease;
+  background-color: rgb(255, 230, 85);
+  color: var(--primary-color);
+}
+.td-item > input[type='text'] {
+  border: 3px solid #13ac00;
+  width: 80%;
+  font: inherit;
+  
+}
+
+.td-item > input[type='button'],
+.td-item > input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  
+  color:#0049b5;
+  align-items: center;
+  padding-bottom: 2px;
+  justify-content: space;
+}
+.td-input{
+  
+  color:#0049b5;
+  padding-left: 40px;
+}
+
+.td-item > input[type='checkbox']:checked  + div {
+  text-decoration:line-through;
+  color:#0049b5;
+
+}
+
+.td-new-item{
+  display: flex;
+  background-color: rgb(163, 200, 255);
+  width: 100%;
+  height: 50px;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  border: 3px solid #0049b5;
+  font: inherit;
+  border-radius: 10px;
+  color:#0049b5;
+}
+
+.td-new-item > input{
+  background-color: rgb(163, 200, 255);
+  border: none;
+  width: 100%;
+  outline: none;
+  font: inherit;
+  color:#0049b5;
+  
+}
+
+.td-new-item > input::placeholder {
+  font-weight: normal;
+}
